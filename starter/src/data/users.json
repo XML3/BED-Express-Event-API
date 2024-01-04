@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "luka_montilva",
+      "password": "passw0rd1",
+      "name": "Luka Montilva",
+      "image": "https://i.ibb.co/YNP3pBc/Luka-Montilva.png"
+    },
+    {
+      "id": "2",
+      "username": "anna_müller",
+      "password": "passw0rd2",
+      "name": "Anna Müller",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb401d7131c760ca1c63_Elieska%20Lensink.jpg"
+    },
+    {
+      "id": "3",
+      "username": "clarisa_smith",
+      "password": "passw0rd3",
+      "name": "Clarisa Smith",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb401d7131c760ca1c63_Elieska%20Lensink.jpg"
+    },
+    {
+      "id": "4",
+      "username": "irene-devris",
+      "password": "passw0rd4",
+      "name": "Irene DeVris",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb401d7131c760ca1c63_Elieska%20Lensink.jpg"
+    },
+    {
+      "id": "5",
+      "username": "jessie_tompkins",
+      "password": "passw0rd5",
+      "name": "Jessie Tompkins",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb093da7d92733c001c0_Ignacio%20Villafruela%20Rodr%C3%ADguez.jpg"
+    },
+    {
+      "id": "6",
+      "username": "jean_leon",
+      "password": "passw0rd6",
+      "name": "Jean Leon",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb093da7d92733c001c0_Ignacio%20Villafruela%20Rodr%C3%ADguez.jpg"
+    }
+  ]
+}

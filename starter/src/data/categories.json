@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "name": "Glitch, Electro, Module",
+      "id": "1"
+    },
+    {
+      "name": "Industrial, Dark Techno, EBM",
+      "id": "2"
+    },
+    {
+      "name": "Techno",
+      "id": "3"
+    },
+    {
+      "name": "Electronica",
+      "id": "4"
+    },
+    {
+      "name": "House",
+      "id": "5"
+    }
+  ]
+}
