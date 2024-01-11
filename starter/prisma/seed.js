@@ -48,6 +48,8 @@ async function main() {
       },
     });
   }
+
+  //add CONTACT seed for testing later
 }
 
 main()
