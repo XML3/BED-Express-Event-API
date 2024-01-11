@@ -54,12 +54,12 @@ model Contact {
 }
 
 model Articles {
-  id         Int  @id @default(autoincrement())
+  id         String  @id @default(uuid())
   image      String
   text       String   @db.VarChar(30000)
 }
 
 model ImgAnimation {
-  id        Int  @id @default(autoincrement())
+  id        String  @id @default(uuid())
   image     String
 }
