@@ -52,3 +52,14 @@ model Contact {
   email       String
   message     String
 }
+
+model Articles {
+  id         Int  @id @default(autoincrement())
+  image      String
+  text       String   @db.VarChar(30000)
+}
+
+model ImgAnimation {
+  id        Int  @id @default(autoincrement())
+  image     String
+}
