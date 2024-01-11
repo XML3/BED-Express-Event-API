@@ -6,6 +6,8 @@ import loginRouter from "../routes/login.js";
 import errorHandler from "../src/middleware/errorHandler.js";
 import log from "../src/middleware/logMiddleware.js";
 import contactRouter from "../routes/contact.js";
+import articlesRouter from "../routes/articles.js";
+import imgAnimationRouter from "../routes/imgAnimation.js";
 import * as Sentry from "@sentry/node";
 import "dotenv/config";
 
@@ -39,7 +41,8 @@ app.use("/categories", categoriesRouter);
 app.use("/events", eventsRouter);
 app.use("/users", usersRouter);
 app.use("/contact", contactRouter);
-
+app.use("/articles", articlesRouter);
+app.use("/imgAnimation", imgAnimationRouter);
 //Login
 app.use("/login", loginRouter);
 
