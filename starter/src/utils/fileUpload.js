@@ -15,3 +15,6 @@ const uploadFileToImgBB = async (file) => {
 };
 
 export default uploadFileToImgBB;
+
+//This Util is set up in order to send an uploaded image from a devide to the photohosting site.
+//In the FED this is located in the Forms to Create or Update Events
