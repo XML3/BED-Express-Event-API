@@ -1,4 +1,4 @@
-Express Events Starter
+Express Events API
 
 This Back-end Express API project is the backbone of the Events management system (Front-end project/Events). 
 It manages the database, enabling posting, editing, and deletion of events.  Additionally, it handles the contact form functionality using nodemailer, facilitating communication between users and App managers. 
