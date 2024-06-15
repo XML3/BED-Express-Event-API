@@ -10,6 +10,10 @@ import articlesRouter from "../routes/articles.js";
 import imgAnimationRouter from "../routes/imgAnimation.js";
 import * as Sentry from "@sentry/node";
 import "dotenv/config";
+//Import PrismaCLient and adapters
+import { PrismaClient } from "@prisma/client";
+import { PrismaLibSQL } from "@prisma/adapter-libsql";
+import { createClient } from "@libsql/client";
 
 //Initialize Prisma Client adapter for SQLite - Turso
 const libsql = createClient({
@@ -44,6 +48,12 @@ app.use(Sentry.Handlers.tracingHandler());
 //Global middleware
 app.use(express.json());
 app.use(log);
+
+//Middleware to sync db on startup - new TURSO-Prisma LibSQL setup
+app.use(async (req, res, next) => {
+  await libsql.sync();
+  next();
+});
 
 //Routes
 app.use("/categories", categoriesRouter);
