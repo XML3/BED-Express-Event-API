@@ -58,7 +58,7 @@ model Contact {
 model Articles {
   id         String  @id @default(uuid())
   image      String
-  text       String   @db.VarChar(30000)
+  text       String  
 }
 
 model ImgAnimation {
