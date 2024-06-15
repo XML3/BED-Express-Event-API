@@ -36,7 +36,7 @@ model Event {
   location    String
   startTime   DateTime
   endTime     DateTime
-  lineup      String @db.VarChar(900)
+  lineup      String 
   //relations
   userId      String
 
