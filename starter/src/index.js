@@ -11,6 +11,15 @@ import imgAnimationRouter from "../routes/imgAnimation.js";
 import * as Sentry from "@sentry/node";
 import "dotenv/config";
 
+//Initialize Prisma Client adapter for SQLite - Turso
+const libsql = createClient({
+  url: `${process.env.TURSO_DATABASE_URL}`,
+  authToken: `${process.env.TURSO_AUTH_TOKEN}`,
+});
+
+const adapter = new PrismaLibSQL(libsql);
+const prisma = new PrismaClient({ adapter });
+
 const app = express();
 
 //Sentry
@@ -54,3 +63,5 @@ app.use(errorHandler);
 app.listen(3000, () => {
   console.log("Server is listening on port 3000");
 });
+
+export default prisma;
