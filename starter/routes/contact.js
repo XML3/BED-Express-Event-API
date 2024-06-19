@@ -1,4 +1,5 @@
 import express from "express";
+import createContactEntry from "../src/services/contact/contact.js";
 
 const router = express.Router();
 
