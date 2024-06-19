@@ -21,6 +21,6 @@ const sendMail = async (mailOptions) => {
   }
 };
 
-export default transporter;
+export { sendMail };
 
 //This Util is used for the nodemailer/Gmail set up for the FED Contact Form
