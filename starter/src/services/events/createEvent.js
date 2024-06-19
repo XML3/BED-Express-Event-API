@@ -31,7 +31,7 @@
 // };
 
 import { PrismaClient } from "@prisma/client";
-import uploadFileToImgBB from "../../utils/fileUpload";
+import uploadFileToImgBB from "../../utils/fileUpload.js";
 
 const createEvent = async (
   title,
