@@ -49,7 +49,7 @@ app.use(Sentry.Handlers.tracingHandler());
 app.use(express.json());
 app.use(log);
 
-//Middleware to sync db on startup - new TURSO-Prisma LibSQL setup
+// sync db on startup - new TURSO-Prisma LibSQL setup
 app.use(async (req, res, next) => {
   await libsql.sync();
   next();
