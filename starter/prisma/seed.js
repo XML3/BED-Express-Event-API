@@ -20,6 +20,7 @@ async function main() {
       update: {},
       create: user,
     });
+    console.log(`Upserted user: ${user.id}`);
   }
 
   for (const category of categories) {
@@ -28,6 +29,7 @@ async function main() {
       update: {},
       create: category,
     });
+    console.log(`Upserted category: ${category.id}`);
   }
 
   for (const event of events) {
@@ -51,6 +53,7 @@ async function main() {
         },
       },
     });
+    console.log(`Upserted event: ${event.id}`);
   }
 
   for (const article of articles) {
@@ -59,6 +62,7 @@ async function main() {
       update: {},
       create: article,
     });
+    console.log(`Upserted article: ${article.id}`);
   }
 
   for (const imgAnimate of imgAnimation) {
@@ -67,6 +71,7 @@ async function main() {
       update: {},
       create: imgAnimate,
     });
+    console.log(`Upserted imgAnimation: ${imgAnimate.id}`);
   }
 }
 
