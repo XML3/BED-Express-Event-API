@@ -50,10 +50,10 @@ app.use(express.json());
 app.use(log);
 
 // sync db on startup - new TURSO-Prisma LibSQL setup
-app.use(async (req, res, next) => {
-  await libsql.sync();
-  next();
-});
+// app.use(async (req, res, next) => {
+//   await libsql.sync();
+//   next();
+// });
 
 //Routes
 app.use("/categories", categoriesRouter);
