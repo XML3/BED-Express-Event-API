@@ -2,7 +2,7 @@
   "name": "express-events",
   "version": "1.0.0",
   "type": "module",
-  "description": "Your first ever REST API for managing events",
+  "description": "REST API for managing events",
   "main": "src/index.js",
   "prisma": {
     "seed": "node ./prisma/seed.js"
@@ -16,7 +16,8 @@
   "author": "Xagly Montilva",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^5.5.2",
+    "@prisma/adapter-pg": "^5.16.1",
+    "@prisma/client": "^5.15.1",
     "@sentry/node": "^7.74.0",
     "axios": "^1.6.4",
     "dotenv": "^16.3.1",
@@ -24,11 +25,15 @@
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.8",
+    "pg": "^8.12.0",
     "uuid": "^9.0.0",
     "winston": "^3.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
-    "prisma": "^5.5.2"
+    "prisma": "^5.15.1"
+  },
+  "engines": {
+    "node": ">=18 <19"
   }
 }
