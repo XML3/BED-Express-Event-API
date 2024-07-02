@@ -10,11 +10,12 @@ import articlesRouter from "../routes/articles.js";
 import imgAnimationRouter from "../routes/imgAnimation.js";
 import * as Sentry from "@sentry/node";
 import "dotenv/config";
-import { Pool } from "pg";
+import pkg from "pg";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@prisma/client";
 
-const connectionString = `${process.env.DATABASE_URL}`;
+const { Pool } = pkg;
+const connectionString = `${process.env.DIRECT_URL}`;
 
 const pool = new Pool({ connectionString });
 const adapter = new PrismaPg(pool);
