@@ -1,5 +1,5 @@
 import express from "express";
-import getImgAnimationById from "../src/services/animation/getImgAnimation";
+import getImgAnimationById from "../src/services/animation/getImgAnimation.js";
 
 const router = express.Router();
 
