@@ -40,7 +40,7 @@
 // };
 
 import { PrismaClient } from "@prisma/client";
-import uploadFileToImgBB from "../../utils/fileUpload";
+import uploadFileToImgBB from "../../utils/fileUpload.js";
 
 const updateEventById = async (id, updatedEvent) => {
   const prisma = new PrismaClient();
