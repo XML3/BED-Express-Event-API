@@ -13,6 +13,7 @@ import "dotenv/config";
 import pkg from "pg";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@prisma/client";
+import cors from "cors"; //
 
 const { Pool } = pkg;
 const connectionString = `${process.env.DATABASE_URL}`;
@@ -45,6 +46,15 @@ app.use(Sentry.Handlers.tracingHandler());
 //Global middleware
 app.use(express.json());
 app.use(log);
+
+// CORS middleware configuration
+const corsOptions = {
+  origin: "https://eventsmanagementapp.netlify.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
 
 //Routes
 app.use("/categories", categoriesRouter);
