@@ -2,6 +2,8 @@ import { PrismaClient } from "@prisma/client";
 import userData from "../src/data/users.json" assert { type: "json" };
 import categoryData from "../src/data/categories.json" assert { type: "json" };
 import eventData from "../src/data/events.json" assert { type: "json" };
+import articleData from "../src/data/articles.json" assert { type: "json" };
+import imgAnimationData from "../src/data/imgAnimation.json" assert { type: "json" };
 
 const prisma = new PrismaClient({ log: ["query", "info", "warn", "error"] });
 
@@ -9,6 +11,8 @@ async function main() {
   const { users } = userData;
   const { categories } = categoryData;
   const { events } = eventData;
+  const { articles } = articleData;
+  const { imgAnimation } = imgAnimationData;
 
   for (const user of users) {
     await prisma.user.upsert({
@@ -49,7 +53,21 @@ async function main() {
     });
   }
 
-  //add CONTACT seed for testing later
+  for (const article of articles) {
+    await prisma.articles.upsert({
+      where: { id: article.id },
+      update: {},
+      create: article,
+    });
+  }
+
+  for (const imgAnimate of imgAnimation) {
+    await prisma.imgAnimation.upsert({
+      where: { id: imgAnimate.id },
+      update: {},
+      create: imgAnimate,
+    });
+  }
 }
 
 main()
