@@ -4,13 +4,13 @@
       "id": "1",
       "createdBy": "1",
       "title": "Glitch FM",
-      "description": "Glitch, IDM, Electro Music Festival",
+      "description": "Glitch, Electro Music Festival",
       "image": "https://i.ibb.co/5KJxPdJ/glitch-Fm-scaled22.png",
       "categoryIds": ["1"],
       "location": "Miami, USA",
       "startTime": "2023-03-10T18:00:00.000Z",
       "endTime": "2023-03-10T17:00:00.000Z",
-      "lineup": "Autechre, Phoenecia, Otto Von Schirach, Dino Felipe, Richard Devine, Doormouse, Satellite Beach, UPSAMMY, The Fellow Passanger, Mr. Projectile, Erwan Sene, Hexalyne, Cloinc, Matt Atten, yab; yvanko, Signalform, Twofouteen"
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
     },
     {
       "id": "2",
@@ -22,19 +22,19 @@
       "location": "New York City, USA",
       "startTime": "2023-04-06T18:46:00.000Z",
       "endTime": "2023-04-06T19:46:00.000Z",
-      "lineup": "Alonzo, Anthony Rother, AFX, Andrea Parker, Boris Divider, Cosmic Force, Cybotron, Oscar Mulero, Nikisi"
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
     },
     {
       "id": "3",
       "createdBy": "2",
       "title": "EBM Solstice",
-      "description": "https://i.ibb.co/W60SdSS/pexels-apasaric-1820770.jpg",
-      "image": "https://i.ibb.co/tcvRm7f/EMB.png",
-      "categoryIds": ["2"],
+      "description": "Industrial - EBM Music Festival",
+      "image": "https://i.ibb.co/W60SdSS/pexels-apasaric-1820770.jpg",
+      "categoryIds": ["1"],
       "location": "Cologne, Germany",
       "startTime": "2023-03-15T12:00:00.000Z",
       "endTime": "2023-03-15T13:30:00.000Z",
-      "lineup": "Front 242, Nitzer Ebb, Veronika Vasicka, The Hacker, Front Line Assembly ,Ancient Methods, Schwefelgelb, Silent Servant"
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
     },
     {
       "id": "4",
@@ -42,11 +42,11 @@
       "title": "Beyond",
       "description": "Techno Music Festival",
       "image": "https://i.ibb.co/cgjYkRd/pexels-jonastogo-3392640.jpg",
-      "categoryIds": ["3"],
+      "categoryIds": ["1"],
       "location": "Amsterdam, Netherlands",
       "startTime": "2023-03-09T06:00:00.000Z",
       "endTime": "2023-03-09T07:00:00.000Z",
-      "lineup": "Charlotte de Witte, KAS:ST, Clark, Gesaffelstein, Maya Jane Coles, Helena Hauff, I Hate Models, Charlotte de Witte, KAS:ST, Clark, Gesaffelstein, Maya Jane Coles, Helena Hauff, I Hate Models, Charlotte de Witte, KAS:ST, Clark, Gesaffelstein, Maya Jane Coles, Helena Hauff, I Hate Models"
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
     },
     {
       "id": "5",
@@ -54,23 +54,167 @@
       "title": "The Mission",
       "description": "Electronica Music Festival",
       "image": "https://i.ibb.co/nk6tGTx/pexels-joshsorenson-154147.jpg",
-      "categoryIds": ["4"],
+      "categoryIds": ["1"],
       "location": "Barcelona, Spain",
       "startTime": "2023-03-09T06:00:00.000Z",
       "endTime": "2023-03-09T07:00:00.000Z",
-      "lineup": "Objekt, Modeselektor, The knife, LFO, .Adult, Röyksopp, Sue Zuki, Silvia Kastel, Silex, Monolake, Bunok Cusp, New Order, Caribou, Boards of Canada, Trentemøller"
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
     },
     {
       "id": "6",
       "createdBy": "6",
       "title": "God's House",
-      "description": "House Music Festival",
+      "description": "Detroit House Music Festival",
       "image": "https://i.ibb.co/v1ybYrc/pexels-didsss-1300578.jpg",
-      "categoryIds": ["5"],
+      "categoryIds": ["1"],
       "location": "Detroit, Michigan",
       "startTime": "2023-03-09T06:00:00.000Z",
       "endTime": "2023-03-09T07:00:00.000Z",
-      "lineup": "DK7, D.H.S, Marshall Jefferson, Lil Louis, Felix da Housecat, Sleezy D, Steve Poindexter, Cajmere, Willie Wonka"
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
+    },
+    {
+      "id": "7",
+      "createdBy": "3",
+      "title": "Pixels",
+      "image": "https://i.ibb.co/0yc7707/dale-de-vera-t9-BEidmh-G9-I-unsplash.jpg",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9",
+      "description": "Alternative/Indie Festival",
+      "categoryIds": ["2"],
+      "location": "San Francisco, USA",
+      "startTime": "2023-03-15T12:00:00.000Z",
+      "endTime": "2023-04-10T12:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "createdBy": "5",
+      "title": "Synth 83",
+      "image": "https://i.ibb.co/khxbRmF/joshua-coleman-Cj8h7-b47ko-unsplash.jpg",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9",
+      "description": "80's Music Night ",
+      "categoryIds": ["2"],
+      "location": "New York City, USA",
+      "startTime": "2023-03-15T12:00:00.000Z",
+      "endTime": "2023-03-15T13:30:00.000Z"
+    },
+    {
+      "id": "9",
+      "createdBy": "2",
+      "title": "242",
+      "description": "Industrial - EBM Night",
+      "image": "https://i.ibb.co/zGP7NvF/ferran-fusalba-rosello-f75w4vv0-J7s-unsplash.jpg",
+      "categoryIds": ["2"],
+      "location": "Berlin, Germany",
+      "startTime": "2023-03-15T12:00:00.000Z",
+      "endTime": "2023-03-15T13:30:00.000Z",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
+    },
+    {
+      "id": "10",
+      "createdBy": "4",
+      "title": "Glam",
+      "description": "Glamrock Festival",
+      "image": "https://i.ibb.co/60Xm4Dq/cherries.png",
+      "categoryIds": ["2"],
+      "location": "Los Angeles, USA",
+      "startTime": "2023-03-09T06:00:00.000Z",
+      "endTime": "2023-03-09T07:00:00.000Z",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
+    },
+    {
+      "id": "11",
+      "createdBy": "5",
+      "title": "Surfside",
+      "description": "Surf Rock & Punk Night",
+      "image": "https://i.ibb.co/PwD68xS/brian-lundquist-2-O0b-ZCba-OO4-unsplash.jpg",
+      "categoryIds": ["2"],
+      "location": "Miami, USA",
+      "startTime": "2023-03-09T06:00:00.000Z",
+      "endTime": "2023-03-09T07:00:00.000Z",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
+    },
+    {
+      "id": "12",
+      "createdBy": "6",
+      "title": "Cured",
+      "description": "Synth-pop Post-punk Gothic-rock Festival",
+      "image": "https://i.ibb.co/HHr0p73/bee-felten-leidel-QQQyx-EV9-DBY-unsplash.jpg",
+      "categoryIds": ["2"],
+      "location": "West Sussex, England",
+      "startTime": "2023-03-09T06:00:00.000Z",
+      "endTime": "2023-03-09T07:00:00.000Z",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
+    },
+    {
+      "id": "13",
+      "createdBy": "4",
+      "title": "Night of Glass",
+      "image": "https://i.ibb.co/C9RPYQX/ronan-dorard-3-Ko-Hm-LJGNa-U-unsplash.jpg",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9",
+      "description": "A night of cinematic music pieces",
+      "categoryIds": ["3"],
+      "location": "New York City, USA",
+      "startTime": "2023-03-15T12:00:00.000Z",
+      "endTime": "2023-04-10T12:00:00.000Z"
+    },
+    {
+      "id": "14",
+      "createdBy": "1",
+      "title": "By the Wind",
+      "image": "https://i.ibb.co/QnXzxcW/manuel-nageli-7-Cc-PLtyw-Rso-unsplash.jpg",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9",
+      "description": "International Conducting Competion",
+      "categoryIds": ["3"],
+      "location": "Amsterdam, The Netherlands",
+      "startTime": "2023-03-15T12:00:00.000Z",
+      "endTime": "2023-03-15T13:30:00.000Z"
+    },
+    {
+      "id": "15",
+      "createdBy": "2",
+      "title": "A Tribute to",
+      "description": "A Tribute to Mozart",
+      "image": "https://i.ibb.co/nP3JgPK/gianluca-carenza-Yxju8-Uua-Re-I-unsplash.jpg",
+      "categoryIds": ["3"],
+      "location": "Vienna, Austria",
+      "startTime": "2023-03-15T12:00:00.000Z",
+      "endTime": "2023-03-15T13:30:00.000Z",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
+    },
+    {
+      "id": "16",
+      "createdBy": "3",
+      "title": "A Night With",
+      "description": "Piano Concerto",
+      "image": "https://i.ibb.co/bBc2CNs/piano.png",
+      "categoryIds": ["3"],
+      "location": "Essen, Germany",
+      "startTime": "2023-03-09T06:00:00.000Z",
+      "endTime": "2023-03-09T07:00:00.000Z",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
+    },
+    {
+      "id": "17",
+      "createdBy": "2",
+      "title": "Under the Stars",
+      "description": "The Philharmonic Orchestra",
+      "image": "https://i.ibb.co/frKWCFN/alexis-subias-8-YT-UVLp-FYc-unsplash.jpg",
+      "categoryIds": ["3"],
+      "location": "The Greco-Roman Theather, Sicily",
+      "startTime": "2023-03-09T06:00:00.000Z",
+      "endTime": "2023-03-09T07:00:00.000Z",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
+    },
+    {
+      "id": "18",
+      "createdBy": "6",
+      "title": "Cello Concerto",
+      "description": "Biggest Cello Festival in the World",
+      "image": "https://i.ibb.co/jGV6DV7/cello.png",
+      "categoryIds": ["3"],
+      "location": "Amsterdam, The Netherlands",
+      "startTime": "2023-03-09T06:00:00.000Z",
+      "endTime": "2023-03-09T07:00:00.000Z",
+      "lineup": "Artist1, Artist 2, Artist 3, Artist 4, Artist 5, Artist 6, Artist 7, Artist 8, Artist 9"
     }
   ]
 }
