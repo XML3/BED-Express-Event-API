@@ -1,24 +1,16 @@
 {
   "categories": [
     {
-      "name": "Glitch, Electro, Module",
+      "name": "Electronic Music",
       "id": "1"
     },
     {
-      "name": "Industrial, Dark Techno, EBM",
+      "name": "Retro 80's & 90's",
       "id": "2"
     },
     {
-      "name": "Techno",
+      "name": "Cinematic - Symphony",
       "id": "3"
-    },
-    {
-      "name": "Electronica",
-      "id": "4"
-    },
-    {
-      "name": "House",
-      "id": "5"
     }
   ]
 }
