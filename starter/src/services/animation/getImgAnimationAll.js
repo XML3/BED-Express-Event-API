@@ -1,4 +1,4 @@
-import { PirsmaClient, PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 
 const getImgAnimation = async () => {
   const prisma = new PrismaClient();
