@@ -1,8 +1,6 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "../../../lib/prismaClient.js";
 
 const getImgAnimation = async () => {
-  const prisma = new PrismaClient();
-
   const imgAnimation = await prisma.imgAnimation.findMany();
 
   return imgAnimation;

@@ -1,8 +1,7 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "../../../lib/prismaClient.js";
 import { sendMail } from "../../utils/sendMail.js";
 
 const createContactEntry = async (name, email, message) => {
-  const prisma = new PrismaClient();
   try {
     const contact = await prisma.contact.create({
       data: {

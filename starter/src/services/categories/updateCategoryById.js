@@ -1,19 +1,6 @@
-// import categoryData from "../../data/categories.json" assert { type: "json" };
-
-// const updateCategoryById = (id, name) => {
-//   const category = categoryData.categories.find(
-//     (category) => category.id === Number(id)
-//   );
-
-//   category.name = name ?? category.name;
-
-//   return category;
-// };
-
-import { PrismaClient } from "@prisma/client";
+import prisma from "../../../lib/prismaClient.js";
 
 const updateCategoryById = async (id, updatedCategory) => {
-  const prisma = new PrismaClient();
   const category = await prisma.category.updateMany({
     where: {
       id,

@@ -1,36 +1,4 @@
-// import eventData from "../../data/events.json" assert { type: "json" };
-// import { v4 as uuid } from "uuid";
-
-// const createEvent = (
-//   title,
-//   description,
-//   location,
-//   image,
-//   startTime,
-//   endTime,
-//   createdBy,
-//   categoryIds,
-//   lineup
-// ) => {
-//   const newEvent = {
-//     id: uuid(),
-//     title,
-//     description,
-//     location,
-//     image,
-//     startTime,
-//     endTime,
-//     createdBy,
-//     categoryIds,
-//     lineup,
-//   };
-
-//   eventData.events.push(newEvent);
-
-//   return newEvent;
-// };
-
-import { PrismaClient } from "@prisma/client";
+import prisma from "../../../lib/prismaClient.js";
 import uploadFileToImgBB from "../../utils/fileUpload.js";
 
 const createEvent = async (
@@ -43,8 +11,6 @@ const createEvent = async (
   createdBy,
   categoryIds
 ) => {
-  const prisma = new PrismaClient();
-
   //upload the image and get the ImgBB URL
   const imageUrl = await uploadFileToImgBB(image);
 

@@ -1,13 +1,6 @@
-// import userData from "../../data/users.json" assert { type: "json" };
-
-// const getUserById = (id) => {
-//   return userData.users.find((user) => user.id === Number(id));
-// };
-
-import { PrismaClient } from "@prisma/client";
+import prisma from "../../../lib/prismaClient.js";
 
 const getUserById = async (id) => {
-  const prisma = new PrismaClient();
   const user = await prisma.user.findUnique({
     where: { id },
   });
