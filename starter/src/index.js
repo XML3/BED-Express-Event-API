@@ -64,7 +64,7 @@ app.use("/contact", contactRouter);
 app.use("/articles", articlesRouter);
 app.use("/imgAnimation", imgAnimationRouter);
 //Login
-app.use("/login", loginRouter);
+app.use("/auth", loginRouter);
 
 // The error handler must be registered before any other error middleware and after all controllers
 app.use(Sentry.Handlers.errorHandler());
