@@ -2,9 +2,12 @@ import axios from "axios";
 
 const uploadFileToImgBB = async (file) => {
   try {
+    const imageBuffer = fs.readFileSync(file);
+    const imageBase64 = imageBuffer.toString("base64");
+
     const imgbbResponse = await axios.post("https://api.imgbb.com/1/upload", {
       key: process.env.IMGBB_API_KEY,
-      image: file.buffer.toString("base64"),
+      image: imageBase64,
     });
 
     return imgbbResponse.data.data.url;
