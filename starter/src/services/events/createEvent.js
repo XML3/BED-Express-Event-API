@@ -12,7 +12,7 @@ const createEvent = async (
   categoryIds
 ) => {
   //upload the image and get the ImgBB URL
-  const imageUrl = await uploadFileToImgBB(image);
+  const imageUrl = image ? await uploadFileToImgBB(image.path) : null;
 
   const event = await prisma.event.create({
     data: {
