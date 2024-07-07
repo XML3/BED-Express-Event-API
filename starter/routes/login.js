@@ -25,7 +25,7 @@ import login from "../src/services/auth/login.js";
 
 const router = express.Router();
 
-router.post("/", async (req, res, next) => {
+router.post("/signin", async (req, res, next) => {
   try {
     const { username, password } = req.body;
     const token = await login(username, password);
