@@ -5,7 +5,7 @@ const updateEventById = async (id, updatedEvent) => {
   const { image, categoryIds, createdBy, ...rest } = updatedEvent;
 
   //if there is a new image, upload it and get the ImgBB URL
-  const imageUrl = image ? await uploadFileToImgBB(image) : undefined;
+  const imageUrl = image ? await uploadFileToImgBB(image.path) : undefined;
 
   const event = await prisma.event.update({
     where: { id },
