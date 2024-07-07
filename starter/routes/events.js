@@ -23,7 +23,7 @@ router.get("/", async (req, res, next) => {
 //POST = Create New Event + upload file(img) middleware
 router.post(
   "/",
-  authMiddleware,
+  // authMiddleware,
   uploadMiddleware.single("image"),
   async (req, res, next) => {
     try {

@@ -19,15 +19,19 @@ router.get("/", async (req, res, next) => {
 });
 
 //POST = Create New User
-router.post("/", authMiddleware, async (req, res, next) => {
-  try {
-    const { username, password, name, image } = req.body;
-    const newUser = await createUser(username, password, name, image);
-    res.status(201).json(newUser);
-  } catch (error) {
-    next(error);
+router.post(
+  "/",
+  // authMiddleware,
+  async (req, res, next) => {
+    try {
+      const { username, password, name, image } = req.body;
+      const newUser = await createUser(username, password, name, image);
+      res.status(201).json(newUser);
+    } catch (error) {
+      next(error);
+    }
   }
-});
+);
 
 //DELETE User By Id
 router.delete("/:id", authMiddleware, async (req, res, next) => {
