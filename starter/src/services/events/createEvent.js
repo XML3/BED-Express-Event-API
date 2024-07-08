@@ -26,7 +26,7 @@ const createEvent = async (
         connect: { id: createdBy },
       },
       categories: {
-        connect: categoryIds.map((id) => ({ id })),
+        connect: (categoryIds ?? []).map((id) => ({ id })),
       },
     },
   });
