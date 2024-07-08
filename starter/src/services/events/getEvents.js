@@ -10,6 +10,21 @@ const getEvents = async (title, location) => {
         contains: location,
       },
     },
+    include: {
+      createdBy: {
+        select: {
+          id: true,
+          name: true,
+          image: true,
+        },
+      },
+      categories: {
+        select: {
+          id: true,
+          name: true,
+        },
+      },
+    },
   });
 
   return events;
