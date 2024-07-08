@@ -22,10 +22,7 @@ const getEventById = async (id) => {
     },
   });
 
-  const transformcategories = categories.map((category) => category.id);
-  return transformcategories;
-
-  // return event;
+  return event;
 };
 
 export default getEventById;
