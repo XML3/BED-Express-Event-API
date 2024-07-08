@@ -4,12 +4,10 @@ const getUserById = async (id) => {
   const user = await prisma.user.findUnique({
     where: { id },
     include: {
-      createdBy: {
-        select: {
-          id: true,
-          name: true,
-          image: true,
-        },
+      select: {
+        id: true,
+        name: true,
+        image: true,
       },
     },
   });
