@@ -21,13 +21,17 @@ const getEvents = async (title, location) => {
       categories: {
         select: {
           id: true,
-          name: true,
         },
       },
     },
   });
 
-  return events;
+  const transformedEvents = events.map((event) => ({
+    ...event,
+    categoryIds: event.categories.map((category) => category.id),
+  }));
+
+  return transformedEvents;
 };
 
 export default getEvents;
