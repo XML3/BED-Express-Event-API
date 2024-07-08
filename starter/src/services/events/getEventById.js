@@ -5,6 +5,20 @@ const getEventById = async (id) => {
     where: {
       id,
     },
+    include: {
+      createdBy: {
+        select: {
+          id: true,
+          name: true,
+          image: true,
+        },
+      },
+      categories: {
+        select: {
+          id: true,
+        },
+      },
+    },
   });
 
   return event;
