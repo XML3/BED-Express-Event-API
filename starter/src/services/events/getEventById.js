@@ -21,7 +21,11 @@ const getEventById = async (id) => {
     },
   });
 
-  return event;
+  const transformedEvent = events.map((event) => ({
+    ...event,
+    categoryIds: event.categories.map((category) => category.id),
+  }));
+  return transformedEvent;
 };
 
 export default getEventById;
