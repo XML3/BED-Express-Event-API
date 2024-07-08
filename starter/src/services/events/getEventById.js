@@ -16,6 +16,7 @@ const getEventById = async (id) => {
       categories: {
         select: {
           id: true,
+          name: true,
         },
       },
     },
