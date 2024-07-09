@@ -6,7 +6,7 @@ const getEventById = async (id) => {
       id,
     },
     include: {
-      createdBy: {
+      userId: {
         select: {
           id: true,
           name: true,
@@ -22,11 +22,13 @@ const getEventById = async (id) => {
     },
   });
   const categoryIds = event.categories.map((category) => category.id);
-
+  const createdBy = event.userId.map((user) => user.id);
   return {
     ...event,
     categoryIds,
+    createdBy,
     categories: undefined,
+    userId: undefined,
   };
 };
 
