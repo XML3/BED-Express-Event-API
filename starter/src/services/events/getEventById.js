@@ -1,4 +1,5 @@
 import prisma from "../../../lib/prismaClient.js";
+import getCategoryById from "../categories/getCategoryById.js";
 
 const getEventById = async (id) => {
   const event = await prisma.event.findUnique({
@@ -13,7 +14,7 @@ const getEventById = async (id) => {
           image: true,
         },
       },
-      categories: {
+      getCategoryById: {
         select: {
           id: true,
           name: true,
