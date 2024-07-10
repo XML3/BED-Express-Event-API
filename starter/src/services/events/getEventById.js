@@ -34,7 +34,7 @@ const getEventById = async (id) => {
     startTime: event.startTime,
     endTime: event.endTime,
     lineup: event.lineup,
-    userId: event.createdBy.id,
+    userId: event.userId,
     createdBy: {
       id: event.createdBy.id,
       name: event.createdBy.name,
