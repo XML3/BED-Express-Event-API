@@ -24,6 +24,7 @@ const getEventById = async (id) => {
   if (!event) return null;
 
   const categoryIds = event.categories.map((category) => category.id);
+  const createdBy = event.userId.map((user) => user.id);
 
   const formatedEvent = {
     id: event.id,
@@ -35,11 +36,12 @@ const getEventById = async (id) => {
     endTime: event.endTime,
     lineup: event.lineup,
     userId: event.userId,
-    createdBy: {
-      id: event.createdBy.id,
-      name: event.createdBy.name,
-      image: event.createdBy.image,
-    },
+    createdBy: createdBy,
+    // createdBy: {
+    //   id: event.createdBy.id,
+    //   name: event.createdBy.name,
+    //   image: event.createdBy.image,
+    // },
     categoryIds: categoryIds,
   };
 
