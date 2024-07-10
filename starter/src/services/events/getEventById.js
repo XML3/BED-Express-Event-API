@@ -21,13 +21,34 @@ const getEventById = async (id) => {
       },
     },
   });
+  if (!event) return null;
+
   const categoryIds = event.categories.map((category) => category.id);
 
-  return {
-    ...event,
-    categoryIds,
-    categories: undefined,
+  const formatedEvent = {
+    id: event.id,
+    title: event.title,
+    description: event.description,
+    image: event.image,
+    location: event.location,
+    startTime: event.startTime,
+    endTime: event.endTime,
+    lineup: event.lineup,
+    userId: event.createdBy.id,
+    createdBy: {
+      id: event.createdBy.name,
+      name: event.createdBy.image,
+      image: event.createdBy.image,
+    },
+    categoryIds: categoryIds,
   };
+
+  return formatedEvent;
+  // return {
+  //   ...event,
+  //   categoryIds,
+  //   categories: undefined,
+  // };
 };
 
 export default getEventById;
