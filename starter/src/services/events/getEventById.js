@@ -5,7 +5,7 @@ const getEventById = async (id) => {
     where: {
       id,
     },
-    include: {
+    connect: {
       createdBy: {
         select: {
           id: true,
