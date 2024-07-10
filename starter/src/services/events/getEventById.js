@@ -6,11 +6,13 @@ const getEventById = async (id) => {
       id,
     },
     include: {
-      createdBy: {
-        select: {
-          id: true,
-          name: true,
-          image: true,
+      userId: {
+        createdBy: {
+          select: {
+            id: true,
+            name: true,
+            image: true,
+          },
         },
       },
       categories: {
