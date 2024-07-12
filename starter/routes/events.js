@@ -6,6 +6,7 @@ import getEventById from "../src/services/events/getEventById.js";
 import updateEventById from "../src/services/events/updateEventById.js";
 import authMiddleware from "../src/middleware/auth.js";
 import uploadMiddleware from "../src/middleware/uploadMiddleware.js";
+// import uploadFileToImgBB from "../src/utils/fileUpload.js";
 
 const router = express.Router();
 
@@ -24,14 +25,14 @@ router.get("/", async (req, res, next) => {
 router.post(
   "/",
   // authMiddleware,
-  uploadMiddleware.single("image"),
+  // uploadMiddleware.single("image"),
   async (req, res, next) => {
     try {
       const {
         title,
+        image,
         description,
         location,
-        // image,
         startTime,
         endTime,
         createdBy,
@@ -39,19 +40,26 @@ router.post(
         lineup,
       } = req.body;
 
-      const image = req.file;
+      //********
+      //This section is removed, but commented out for reference.  This is to avoid users from overloading my hosting site
 
-      const newEvent = await createEvent(
+      // const imageFile = req.file;
+      // const imageUrl = imageFile
+      //   ? await uploadFileToImgBB(imageFile.path)
+      //   : null;
+
+      const newEvent = await createEvent({
         title,
+        image,
         description,
         location,
-        image,
         startTime,
         endTime,
         createdBy,
         categoryIds,
-        lineup
-      );
+        lineup,
+      });
+
       res.status(201).json(newEvent);
     } catch (error) {
       next(error);
@@ -105,20 +113,20 @@ router.put(
         title,
         description,
         location,
-        // image,
+        image,
         startTime,
         endTime,
         createdBy,
         categoryIds,
         lineup,
       } = req.body;
-      const image = req.file;
+      // const image = req.file;
 
       const updatedEvent = await updateEventById(id, {
         title,
         description,
         location,
-        image: image,
+        image,
         startTime,
         endTime,
         createdBy,
