@@ -50,6 +50,7 @@ app.use(log);
 // CORS middleware configuration
 const corsOptions = {
   origin: "https://eventsmanagementapp.netlify.app",
+  // origin: "http://localhost:3000 ",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
