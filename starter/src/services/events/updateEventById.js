@@ -1,17 +1,17 @@
 import prisma from "../../../lib/prismaClient.js";
-import uploadFileToImgBB from "../../utils/fileUpload.js";
+// import uploadFileToImgBB from "../../utils/fileUpload.js";
 
 const updateEventById = async (id, updatedEvent) => {
   const { image, categoryIds, createdBy, ...rest } = updatedEvent;
 
   //if there is a new image, upload it and get the ImgBB URL
-  const imageUrl = image ? await uploadFileToImgBB(image.path) : undefined;
+  // const imageUrl = image ? await uploadFileToImgBB(image.path) : undefined;
 
   const event = await prisma.event.update({
     where: { id },
     data: {
       ...rest,
-      image: imageUrl || undefined,
+      // image: imageUrl || undefined,
       createdBy: createdBy
         ? {
             connect: { id: createdBy },
