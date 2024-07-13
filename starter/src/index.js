@@ -73,7 +73,7 @@ app.use(Sentry.Handlers.errorHandler());
 app.use(errorHandler);
 
 //winston log
-require("./logging")();
+require("./log")();
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
