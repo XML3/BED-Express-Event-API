@@ -72,6 +72,9 @@ app.use(Sentry.Handlers.errorHandler());
 
 app.use(errorHandler);
 
+//winston log
+require("./logging")();
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
