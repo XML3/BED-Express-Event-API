@@ -13,6 +13,7 @@ import "dotenv/config";
 import pkg from "pg";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@prisma/client";
+import log from "./utils/log.js";
 import cors from "cors"; //
 
 const { Pool } = pkg;
