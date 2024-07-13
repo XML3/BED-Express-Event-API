@@ -13,7 +13,7 @@ import "dotenv/config";
 import pkg from "pg";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@prisma/client";
-import log from "./utils/log.js";
+
 import cors from "cors"; //
 
 const { Pool } = pkg;
@@ -72,9 +72,6 @@ app.use("/auth", loginRouter);
 app.use(Sentry.Handlers.errorHandler());
 
 app.use(errorHandler);
-
-//winston log
-require("./log")();
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
