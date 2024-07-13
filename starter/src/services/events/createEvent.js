@@ -1,7 +1,7 @@
 import prisma from "../../../lib/prismaClient.js";
 // import uploadFileToImgBB from "../../utils/fileUpload.js";
 
-const createEvent = async (
+const createEvent = async ({
   title,
   description,
   location,
@@ -10,8 +10,8 @@ const createEvent = async (
   endTime,
   lineup,
   createdBy,
-  categoryIds
-) => {
+  categoryIds,
+}) => {
   const event = await prisma.event.create({
     data: {
       title,
