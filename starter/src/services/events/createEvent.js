@@ -1,3 +1,4 @@
+import { DEFAULT_USER_INCLUDES } from "@sentry/node";
 import prisma from "../../../lib/prismaClient.js";
 // import uploadFileToImgBB from "../../utils/fileUpload.js";
 
@@ -23,6 +24,15 @@ const createEvent = async ({
       lineup,
       createdBy: {
         connect: { id: createdBy },
+        include: {
+          createdBy: {
+            select: {
+              id: true,
+              name: true,
+              name: true,
+            },
+          },
+        },
       },
       categories: {
         connect: (categoryIds ?? []).map((id) => ({ id })),
