@@ -55,7 +55,7 @@ router.post(
         location,
         startTime,
         endTime,
-        createdBy: createdBy.id,
+        createdBy: createdBy ? createdBy.id : null,
         categoryIds,
         lineup,
       });
@@ -68,22 +68,26 @@ router.post(
 );
 
 //DELETE Event By Id
-router.delete("/:id", authMiddleware, async (req, res, next) => {
-  try {
-    const { id } = req.params;
-    const deleteEventById = await deleteEvent(id);
+router.delete(
+  "/:id",
+  //  authMiddleware,
+  async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      const deleteEventById = await deleteEvent(id);
 
-    if (!deleteEventById) {
-      res.status(404).send(`Event with id ${id} was not found!`);
-    } else {
-      res
-        .status(200)
-        .json({ message: `Record with id ${deleteEventById} was deleted` });
+      if (!deleteEventById) {
+        res.status(404).send(`Event with id ${id} was not found!`);
+      } else {
+        res
+          .status(200)
+          .json({ message: `Record with id ${deleteEventById} was deleted` });
+      }
+    } catch (error) {
+      next(error);
     }
-  } catch (error) {
-    next(error);
   }
-});
+);
 
 //Get Event By Id
 router.get("/:id", async (req, res, next) => {
@@ -105,7 +109,7 @@ router.get("/:id", async (req, res, next) => {
 router.put(
   "/:id",
   authMiddleware,
-  uploadMiddleware.single("image"),
+  // uploadMiddleware.single("image"),
   async (req, res, next) => {
     try {
       const { id } = req.params;
