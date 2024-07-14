@@ -29,7 +29,7 @@ const createEvent = async ({
             select: {
               id: true,
               name: true,
-              name: true,
+              image: true,
             },
           },
         },
