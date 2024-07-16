@@ -5,7 +5,7 @@ It manages the database, enabling posting, editing, and deletion of events.  Add
 
 Furthermore, it manages image uploads by event organizers, ensuring they are efficiently hosted on an image hosting site for their respective events.  
 It integrates with the front-end solution to deliver a comprehensive event management experience.
-https://github.com/XML3/React-Events
+https://github.com/XML3/Events-Management-React
 
 
 ## Running tests
