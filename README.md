@@ -5,6 +5,8 @@ This Back-end Express API project is the backbone of the Events management syste
 It manages the database, enabling posting, editing, and deletion of events by event creators through token authorization.  Additionally, it handles the contact form functionality using nodemailer, facilitating communication between users and App managers. 
 
 Furthermore, it manages image uploads by event organizers, ensuring they are efficiently hosted on an image hosting site for their respective events.  
+*Note: Features of this project have been disabled in portfolio deployment in order to avoid spamming.  The app can be viewed as current user.*
+
 It integrates with the front-end solution to deliver a comprehensive event management experience.
 https://github.com/XML3/Events-Management-React
 
