@@ -10,6 +10,8 @@ It integrates with the front-end solution to deliver a comprehensive event manag
 https://github.com/XML3/Events-Management-React
 
 In this repository there are three different branches due to the changes made by the previous database host.  Events-API branch was modified from MySQL TO postgreSQL for deployment using a new host.
+
+
 *Note: Features of this project have been disabled in portfolio deployment in order to avoid spamming.  The app can be viewed as current user.*
 
 
