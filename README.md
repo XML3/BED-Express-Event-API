@@ -15,7 +15,7 @@ In this repository there are three different branches due to the changes made by
 *Note: Features of this project have been disabled in portfolio deployment in order to avoid spamming.  The app can be viewed as current user.*
 
 
-![Supabase2](https://github.com/user-attachments/assets/b1510f60-127e-417c-90fe-a5fa894fae3c)
+![supabse3](https://github.com/user-attachments/assets/b99b4094-95d7-4308-a463-77059723aeab)
 
 
 
