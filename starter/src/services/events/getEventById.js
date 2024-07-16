@@ -44,11 +44,6 @@ const getEventById = async (id) => {
   };
 
   return formatedEvent;
-  // return {
-  //   ...event,
-  //   categoryIds,
-  //   categories: undefined,
-  // };
 };
 
 export default getEventById;
