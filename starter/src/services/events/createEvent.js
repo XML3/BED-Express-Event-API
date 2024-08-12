@@ -24,12 +24,12 @@ const createEvent = async ({
     categoryIds,
   });
 
-  const userExists = await prisma.user.findUnique({
-    where: { id: createdBy },
-  });
-  if (!userExists) {
-    throw new Error(`User with id ${createdBy} does not exist`);
-  }
+  // const userExists = await prisma.user.findUnique({
+  //   where: { id: createdBy },
+  // });
+  // if (!userExists) {
+  //   throw new Error(`User with id ${createdBy} does not exist`);
+  // }
   const event = await prisma.event.create({
     data: {
       title,

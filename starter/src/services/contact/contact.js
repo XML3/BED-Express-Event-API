@@ -5,9 +5,9 @@ const createContactEntry = async (name, email, message) => {
   try {
     const contact = await prisma.contact.create({
       data: {
-        name,
-        email,
-        message,
+        name: name,
+        email: email,
+        message: message,
       },
     });
 

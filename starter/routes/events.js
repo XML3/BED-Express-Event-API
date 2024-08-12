@@ -55,7 +55,7 @@ router.post(
         location,
         startTime,
         endTime,
-        createdBy,
+        createdBy: createdBy.id,
         categoryIds,
         lineup,
       });
