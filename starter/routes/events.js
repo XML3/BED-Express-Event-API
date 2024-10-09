@@ -104,7 +104,7 @@ router.get("/:id", async (req, res, next) => {
 //PUT = Update Event by Id + upload file(img) Middleware
 router.put(
   "/:id",
-  authMiddleware,
+  // authMiddleware,
   // uploadMiddleware.single("image"),
   async (req, res, next) => {
     try {
