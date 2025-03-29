@@ -105,8 +105,9 @@ prisma/: Contains Prisma schema and database migration files.
 
 Example of how the routes are organized:
 
-js
-Copy
+### Example of how the routes are organized:
+
+```js
 // routes/events.js
 const express = require('express');
 const { createEvent, getEvents, updateEvent, deleteEvent } = require('../controllers/eventController');
@@ -118,6 +119,7 @@ router.put('/:id', updateEvent);
 router.delete('/:id', deleteEvent);
 
 module.exports = router;
+```
 server.js: The entry point of the application, where the Express server is set up and routes are linked.
 
 API Endpoints
