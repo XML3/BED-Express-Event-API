@@ -1,8 +1,6 @@
 # Express Events API - ORM - Node.js/Express, Prisma
 This is the back-end Express API for the Events Management system, serving as the backbone of the full-stack application. It provides a robust API for managing event data, user communication, and image hosting functionalities.
 
-![Rental_hub](https://github.com/user-attachments/assets/e4591d9b-93e6-419d-8071-4d67b888abe9)
-
 
 ## Project Overview
 This project is built with Node.js and Express to handle all server-side logic, and it utilizes Prisma ORM for interacting with a PostgreSQL database. The API manages the following key features:
