@@ -142,6 +142,6 @@ Once the server is up and running, you can interact with the API using tools lik
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Copyright Notice: All design elements, visuals, and intellectual property related to this API are protected by copyright and cannot be copied, reproduced, or used without the express permission of the author.
+
 
 
