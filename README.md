@@ -1,15 +1,14 @@
 # Express Events API - ORM - Node.js/Express, Prisma
-This is the back-end Express API for the Events Management system, serving as the backbone of the full-stack application. It provides a robust API for managing event data, user communication, and image hosting functionalities.
+This is the back-end Express API for the Events Management system, serving as the backbone of the full-stack application. It provides a robust API for managing event data, user communication.
 
+![EventsAPI](https://github.com/user-attachments/assets/f2670f7e-705d-44a2-89f0-87f9b946c302)
 
 ## Project Overview
 This project is built with Node.js and Express to handle all server-side logic, and it utilizes Prisma ORM for interacting with a PostgreSQL database. The API manages the following key features:
 
 Event Management: Allows event creators to post, edit, and delete events through token-based authorization.
 
-Contact Form Functionality: Facilitates communication between users and event managers through email using Nodemailer.
-
-Image Hosting: Enables event organizers to upload images urls for their events, from an external image hosting site.
+Contact Form Functionality: Facilitates communication between users and event managers through email using Nodemailer. (disabled as it is a mock project)
 
 Full-Stack Integration: Works seamlessly with the front-end React.js solution, providing a comprehensive event management system. Front-End Repository.
 
@@ -28,7 +27,7 @@ Contact Form:
 
 A feature for users to send messages to the app manager directly from the front-end, with email notifications handled via Nodemailer.
 
-Image Upload:
+Image Upload by URL:
 
 Event creators can upload event-related images that are stored and hosted on an image hosting service.
 
@@ -46,9 +45,9 @@ Events-API: An earlier version that used MySQL as the database before switching 
 Features Disabled in Portfolio Deployment
 For the purpose of portfolio demonstration and to avoid spamming, some features of this project have been disabled in the deployed version, including:
 
-Deletion functionality.
+- Deletion functionality.
 
-Contact form submissions.
+- Contact form submissions.
 
 However, you can still explore the project as a current user, allowing you to view event data without any modifications.
 
@@ -140,5 +139,5 @@ Once the server is up and running, you can interact with the API using tools lik
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Copyright Notice: All design elements, visuals, and intellectual property related to this API are protected by copyright and cannot be copied, reproduced, or used without the express permission of the author.
+
 
