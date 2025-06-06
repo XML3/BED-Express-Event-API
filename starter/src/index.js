@@ -48,7 +48,7 @@ app.use(Sentry.Handlers.tracingHandler());
 app.use(express.json());
 app.use(log);
 
-// CORS middleware configuration
+// CORS middleware configuration 
 const corsOptions = {
   origin: "https://eventsmanagementapp.netlify.app",
   // origin: "http://localhost:3000",
